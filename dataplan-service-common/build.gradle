@@ -1,0 +1,6 @@
+version = '0.0.1-SNAPSHOT'
+archivesBaseName = 'dataplan-service-common'
+
+dependencies {
+    compile('org.projectlombok:lombok:1.18.0')
+}

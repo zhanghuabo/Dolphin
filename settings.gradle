@@ -1,4 +1,5 @@
 rootProject.name = 'dolphin'
-include 'service-discovery'
-include 'service-openapi'
+include 'discovery-service'
+include 'dataplan-service-server'
+include 'dataplan-service-common'
 

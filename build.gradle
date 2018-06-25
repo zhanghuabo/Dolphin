@@ -1,5 +1,17 @@
-group 'com.redteamobile'
+group 'com.redteamobile.dolphin'
 version '1.0.0'
+
+buildscript {
+    ext {
+        springBootVersion = '2.0.3.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
 
 subprojects {
     apply plugin: 'java'
@@ -11,6 +23,5 @@ subprojects {
 
     repositories {
         mavenCentral()
-        jcenter()
     }
 }
