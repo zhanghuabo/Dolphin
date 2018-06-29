@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: 'dataPlan'
+server:
+  port: 2009
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7979/eureka/
