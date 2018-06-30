@@ -5,8 +5,10 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/SpringCloud_Sell/config-repo
+          uri: https://github.com/zhanghuabo/Dolphin
           search-paths: config
+          username: zhanghuabo
+          password: 11241124zhb
 server:
   port: 7977
 eureka:

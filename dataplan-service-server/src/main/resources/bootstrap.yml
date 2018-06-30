@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: 'dataplan-service-server'
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVICE
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
