@@ -1,10 +1,11 @@
 spring:
   application:
     name: 'dataPlan'
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: admin
 server:
   port: 2009
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-env: dev1
+env: dev
