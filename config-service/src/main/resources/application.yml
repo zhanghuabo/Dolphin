@@ -9,13 +9,22 @@ spring:
           search-paths: config
           username: zhanghuabo
           password: 11241124zhb
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: admin
 server:
   port: 7977
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 
 
 
