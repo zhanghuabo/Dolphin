@@ -1,12 +1,12 @@
 spring:
   application:
-    name: 'dataPlan-service-server'
+    name: 'api-gateway'
   rabbitmq:
     host: localhost
     port: 5672
     username: root
     password: admin
 server:
-  port: 2009
+  port: 2010
 env: dev
 
