@@ -9,5 +9,9 @@ spring:
 server:
   port: 2010
 env: dev
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: routes
 
