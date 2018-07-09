@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: 'openapi-service-server'
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: admin
+server:
+  port: 2011
+env: dev
+
