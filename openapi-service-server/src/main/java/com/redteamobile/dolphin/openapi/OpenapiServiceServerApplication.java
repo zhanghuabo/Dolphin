@@ -1,15 +1,14 @@
-package com.redteamobile.dolphin.dataplanserver;
+package com.redteamobile.dolphin.openapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@EnableDiscoveryClient
 @SpringBootApplication
-public class DataPlanServiceServerApplication {
+@EnableDiscoveryClient
+public class OpenapiServiceServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DataPlanServiceServerApplication.class, args);
+        SpringApplication.run(OpenapiServiceServerApplication.class, args);
     }
 }
-

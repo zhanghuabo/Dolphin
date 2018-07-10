@@ -4,5 +4,7 @@ include 'config-service'
 include 'api-gateway'
 include 'dataplan-service-server'
 include 'dataplan-service-common'
+include 'dataplan-service-client'
+include 'openapi-service-server'
 
 

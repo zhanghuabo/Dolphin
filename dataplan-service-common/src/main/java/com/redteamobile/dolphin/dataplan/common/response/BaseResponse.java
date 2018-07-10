@@ -10,14 +10,14 @@ public class BaseResponse<T> {
 
     private String msg;
 
-    private T obj = null;
+    private T data = null;
 
     public static BaseResponse build() {
         return new BaseResponse();
     }
 
     public BaseResponse success(T obj) {
-        return this.setCode(ResponseCode.OK).setSuccess(true).setObj(obj);
+        return this.setCode(ResponseCode.OK).setSuccess(true).setData(obj);
     }
 
     public BaseResponse fail() {
@@ -51,12 +51,12 @@ public class BaseResponse<T> {
         return this;
     }
 
-    public T getObj() {
-        return obj;
+    public T getData() {
+        return data;
     }
 
-    public BaseResponse<T> setObj(T obj) {
-        this.obj = obj;
+    public BaseResponse<T> setData(T data) {
+        this.data = data;
         return this;
     }
 }

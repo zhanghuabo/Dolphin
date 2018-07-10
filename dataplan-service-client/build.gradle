@@ -1,0 +1,15 @@
+apply plugin: 'io.spring.dependency-management'
+
+version = '0.0.1-SNAPSHOT'
+archivesBaseName = 'dataplan-service-client'
+
+dependencies {
+    compile project(":dataplan-service-common")
+    compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+}
+
+dependencyManagement {
+    imports {
+        mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Finchley.RELEASE'
+    }
+}

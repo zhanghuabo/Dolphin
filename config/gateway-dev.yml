@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: admin
+server:
+  port: 2010
+env: dev
+management:
+  endpoints:
+    web:
+      exposure:
+        include: routes
+

@@ -1,11 +1,9 @@
 spring:
-  application:
-    name: 'dataplan-service-server'
   cloud:
     config:
       discovery:
         enabled: true
-        service-id: CONFIG-SERVICE
+        service-id: CONFIG
       profile: dev
 eureka:
   client:
