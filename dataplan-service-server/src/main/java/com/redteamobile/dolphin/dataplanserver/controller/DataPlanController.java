@@ -13,12 +13,13 @@ import java.util.List;
 public class DataPlanController {
 
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
-    public DataPlan getDataPlanById(@PathVariable("id") Integer id) {
+    public DataPlan getDataPlanById(@PathVariable("id") Integer id) throws InterruptedException {
         List<DataPlan> dataPlans = new ArrayList<>();
         log.info("id is {}", id);
         DataPlan dataPlan = DataPlan.builder().id(id).name("data plan server").build();
         dataPlan.setName("data plan server");
         dataPlans.add(dataPlan);
+        Thread.sleep(3000);
         return dataPlan;
     }
 
