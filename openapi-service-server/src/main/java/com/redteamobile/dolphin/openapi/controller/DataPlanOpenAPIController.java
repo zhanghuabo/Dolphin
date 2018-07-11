@@ -20,8 +20,8 @@ public class DataPlanOpenAPIController {
 
     @GetMapping(value = "/{id}")
     public BaseResponse<DataPlan> list(@PathVariable("id") Integer id) {
-        log.info(" dataPlanClient.getDataPlanById is {}", dataPlanClient.getDataPlanById(3));
         DataPlan dataPlan = dataPlanClient.getDataPlanById(id);
+        log.info("data plan is {}", dataPlan);
         return BaseResponse.build().success(dataPlan);
     }
 
