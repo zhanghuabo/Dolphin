@@ -10,6 +10,12 @@ env: dev
 feign:
   hystrix:
     enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 15000
+        readTimeout: 15000
+        loggerLevel: basic
 management:
   endpoints:
     web:
@@ -22,10 +28,3 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 15000
-feign:
-  client:
-    config:
-      default:
-        connectTimeout: 15000
-        readTimeout: 15000
-        loggerLevel: basic
