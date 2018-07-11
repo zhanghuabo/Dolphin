@@ -1,20 +1,25 @@
 package com.redteamobile.dolphin.dataplanserver.controller;
 
 import com.redteamobile.dolphin.dataplan.common.models.DataPlan;
-import com.redteamobile.dolphin.dataplan.common.response.BaseResponse;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/product/dataPlan")
+@Slf4j
 public class DataPlanController {
 
-    @GetMapping(value = "/{id}")
-    public BaseResponse<DataPlan> list(@PathVariable("id") Integer id) {
-        DataPlan dataPlan = DataPlan.builder().id(id).build();
-        return BaseResponse.build().success(dataPlan);
+    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    public DataPlan getDataPlanById(@PathVariable("id") Integer id) {
+        List<DataPlan> dataPlans = new ArrayList<>();
+        log.info("id is {}", id);
+        DataPlan dataPlan = DataPlan.builder().id(id).name("data plan server").build();
+        dataPlan.setName("data plan server");
+        dataPlans.add(dataPlan);
+        return dataPlan;
     }
 
 }

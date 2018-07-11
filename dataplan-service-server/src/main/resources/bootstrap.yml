@@ -5,6 +5,8 @@ spring:
         enabled: true
         service-id: CONFIG
       profile: dev
+  application:
+    name: dataplan
 eureka:
   client:
     service-url:

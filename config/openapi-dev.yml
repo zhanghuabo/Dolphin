@@ -7,4 +7,6 @@ spring:
 server:
   port: 2011
 env: dev
-
+feign:
+  hystrix:
+    enabled: true
