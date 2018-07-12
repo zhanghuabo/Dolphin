@@ -1,5 +1,9 @@
 group 'com.redteamobile.dolphin'
-version '1.0.0'
+version '1.0.0-SNAPSHOT'
+
+ext {
+    dockerGroup='reg.redtea.io/redteamobile/'
+}
 
 buildscript {
     ext {
@@ -10,17 +14,46 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("se.transmode.gradle:gradle-docker:1.2")
     }
 }
 
 subprojects {
     apply plugin: 'java'
     apply plugin: "idea"
+    apply plugin: "docker"
 
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
     repositories {
         mavenCentral()
+    }
+
+    docker {
+        baseImage "openjdk:8-jre-alpine"
+    }
+
+    task genDocker(type: Docker, dependsOn: build) {
+        doFirst {
+            project.group = dockerGroup
+            push = true
+            applicationName = jar.baseName
+            tagVersion = jar.version
+            addFile(jar.archivePath, '/app.jar')
+            entryPoint(["java",
+                        "-Xmx1024m",
+                        "-Xms512m",
+                        "-XX:NewSize=256m",
+                        "-DDOCKER_LOG_PATH=/var/log/application",
+                        "-jar",
+                        "/app.jar"])
+        }
+    }
+
+    task buildDocker(type: Exec, dependsOn: genDocker) {
+        doFirst {
+            commandLine 'docker', "rmi", dockerGroup + "/" + jar.baseName + ":" + jar.version
+        }
     }
 }
