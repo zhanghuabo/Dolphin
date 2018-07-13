@@ -2,7 +2,7 @@ group 'com.redteamobile.dolphin'
 version '1.0.0-SNAPSHOT'
 
 ext {
-    dockerGroup='reg.redtea.io/redteamobile/'
+    dockerGroup='zhanghuabo'
 }
 
 buildscript {
