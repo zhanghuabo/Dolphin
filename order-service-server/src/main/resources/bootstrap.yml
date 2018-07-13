@@ -1,12 +1,12 @@
 spring:
+  application:
+    name: 'order'
   cloud:
     config:
       discovery:
         enabled: true
         service-id: CONFIG
       profile: dev
-  application:
-    name: dataplan
 eureka:
   client:
     service-url:
