@@ -5,6 +5,7 @@ group = 'com.redteamobile.dolphin'
 version = '0.0.1-SNAPSHOT'
 
 dependencies {
+    compile project(':core-commons-comp')
     compile project(":dataplan-service-client")
     compile('org.springframework.cloud:spring-cloud-starter-config')
     compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')

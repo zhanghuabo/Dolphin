@@ -2,6 +2,8 @@ package com.redteamobile.dolphin.order.models;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 
 @EqualsAndHashCode
@@ -9,9 +11,12 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Orders{
-    private int id;
-    private int dataPlanId;
-    private Date order_time;
+    @Id
+    private Integer id;
+    private String deviceId;
+    private String dataPlanId;
+    private Date orderTime;
     private String status;
 }

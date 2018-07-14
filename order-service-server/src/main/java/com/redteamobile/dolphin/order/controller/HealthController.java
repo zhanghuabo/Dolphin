@@ -1,6 +1,6 @@
 package com.redteamobile.dolphin.order.controller;
 
-import com.redteamobile.dolphin.dataplan.common.response.BaseResponse;
+import com.redteamobile.dolphin.commons.response.BaseResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;

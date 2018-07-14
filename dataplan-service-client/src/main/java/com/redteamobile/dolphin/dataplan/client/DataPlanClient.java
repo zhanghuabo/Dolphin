@@ -18,7 +18,7 @@ public interface DataPlanClient {
 
         @Override
         public DataPlan getDataPlanById(@PathVariable("id") Integer id) {
-            return DataPlan.builder().id(-1).build();
+            return null;
         }
 
     }

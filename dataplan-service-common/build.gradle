@@ -2,5 +2,7 @@ version = '0.0.1-SNAPSHOT'
 archivesBaseName = 'dataplan-service-common'
 
 dependencies {
+    compile project(':core-commons-comp')
     compile('org.projectlombok:lombok:1.18.0')
+    compile('org.hibernate.validator:hibernate-validator:6.0.10.Final')
 }
