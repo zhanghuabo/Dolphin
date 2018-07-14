@@ -1,4 +1,5 @@
 rootProject.name = 'dolphin'
+include 'core-commons-comp'
 include 'discovery-service'
 include 'config-service'
 include 'api-gateway'

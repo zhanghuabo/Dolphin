@@ -1,6 +1,7 @@
-package com.redteamobile.dolphin.dataplan.common.response;
+package com.redteamobile.dolphin.commons.response;
 
-import com.redteamobile.dolphin.dataplan.common.constant.ResponseCode;
+
+import com.redteamobile.dolphin.commons.constant.ResponseCode;
 
 public class BaseResponse<T> {
 

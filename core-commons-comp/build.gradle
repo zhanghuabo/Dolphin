@@ -1,0 +1,7 @@
+version = '0.0.1-SNAPSHOT'
+archivesBaseName = 'core-commons-comp'
+
+dependencies {
+	compile('org.projectlombok:lombok:1.18.0')
+	compile('org.springframework:spring-context')
+}

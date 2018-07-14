@@ -1,6 +1,6 @@
 package com.redteamobile.dolphin.order.controller;
 
-import com.redteamobile.dolphin.dataplan.common.response.BaseResponse;
+import com.redteamobile.dolphin.commons.response.BaseResponse;
 import com.redteamobile.dolphin.order.dto.OrderDTO;
 import com.redteamobile.dolphin.order.dto.OrderStatus;
 import com.redteamobile.dolphin.order.requestEntity.OrdersRequest;

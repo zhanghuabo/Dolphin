@@ -10,7 +10,7 @@ spring:
           username: zhanghuabo
           password: 11241124zhb
   rabbitmq:
-    host: localhost
+    host: 52.74.213.195
     port: 5672
     username: guest
     password: guest
