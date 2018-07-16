@@ -19,7 +19,6 @@ public class DataPlanController {
         DataPlan dataPlan = DataPlan.builder().id(id).name("data plan server").build();
         dataPlan.setName("data plan server");
         dataPlans.add(dataPlan);
-        Thread.sleep(3000);
         return dataPlan;
     }
 
