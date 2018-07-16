@@ -13,7 +13,7 @@ spring:
     base-url: http://52.74.213.195:9411/
   sleuth:
     sampler:
-      probability: 1
+      probability: 1.0
 server:
   port: 2013
 env: dev

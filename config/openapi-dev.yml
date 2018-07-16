@@ -2,8 +2,8 @@ spring:
   rabbitmq:
     host: 52.74.213.195
     port: 5672
-    username: root
-    password: admin
+    username: guest
+    password: guest
   zipkin:
     base-url: http://52.74.213.195:9411/
   sleuth:
