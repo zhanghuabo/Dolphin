@@ -7,13 +7,6 @@ spring:
         enabled: true
         service-id: CONFIG
       profile: dev
-  zipkin:
-    sender:
-      type: web
-  sleuth:
-    web:
-      client:
-        enabled: true
 eureka:
   client:
     service-url:
