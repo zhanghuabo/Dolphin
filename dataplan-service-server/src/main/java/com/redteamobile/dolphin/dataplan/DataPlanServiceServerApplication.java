@@ -1,4 +1,4 @@
-package com.redteamobile.dolphin.dataplanserver;
+package com.redteamobile.dolphin.dataplan;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

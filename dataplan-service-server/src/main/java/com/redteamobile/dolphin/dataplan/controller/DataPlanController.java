@@ -1,6 +1,6 @@
-package com.redteamobile.dolphin.dataplanserver.controller;
+package com.redteamobile.dolphin.dataplan.controller;
 
-import com.redteamobile.dolphin.dataplan.common.models.DataPlan;
+import com.redteamobile.dolphin.dataplan.dto.DataPlan;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 

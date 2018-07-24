@@ -1,6 +1,6 @@
 package com.redteamobile.dolphin.dataplan.client;
 
-import com.redteamobile.dolphin.dataplan.common.models.DataPlan;
+import com.redteamobile.dolphin.dataplan.dto.DataPlan;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;

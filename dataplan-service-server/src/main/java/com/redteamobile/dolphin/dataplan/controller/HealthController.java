@@ -1,4 +1,4 @@
-package com.redteamobile.dolphin.dataplanserver.controller;
+package com.redteamobile.dolphin.dataplan.controller;
 
 import com.redteamobile.dolphin.commons.response.BaseResponse;
 import org.springframework.beans.factory.annotation.Value;

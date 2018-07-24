@@ -1,4 +1,4 @@
-package com.redteamobile.dolphin.dataplan.common.models;
+package com.redteamobile.dolphin.dataplan.models;
 
 import lombok.*;
 
@@ -9,7 +9,7 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class DataPlan{
+public class DataPlan {
 
     private Integer id;
 

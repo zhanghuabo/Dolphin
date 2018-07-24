@@ -1,6 +1,6 @@
 package com.redteamobile.dolphin.order.dto;
 
-import com.redteamobile.dolphin.dataplan.common.models.DataPlan;
+import com.redteamobile.dolphin.dataplan.dto.DataPlan;
 import lombok.*;
 
 import java.util.Date;

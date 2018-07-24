@@ -2,7 +2,7 @@ package com.redteamobile.dolphin.openapi.controller;
 
 import com.redteamobile.dolphin.commons.response.BaseResponse;
 import com.redteamobile.dolphin.dataplan.client.DataPlanClient;
-import com.redteamobile.dolphin.dataplan.common.models.DataPlan;
+import com.redteamobile.dolphin.dataplan.dto.DataPlan;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
